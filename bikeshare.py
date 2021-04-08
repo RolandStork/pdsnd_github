@@ -180,8 +180,8 @@ def trip_duration_stats(df):
     print('The total traval time was {}.'.format(str(total_t)))
     # display mean travel time
     mean_t = timedelta(seconds=int(df['Trip Duration'].mean()))
-    print('The mean traval time was {}.'.format(str(mean_t)))
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print('The mean traval time was {}.\nThis took {} seconds.' 
+          .format(str(mean_t), time.time() - start_time))
     print('-'*40)
 
 
