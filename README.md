@@ -4,7 +4,7 @@
 7th Apr 2021
 
 ### Project Title
-Bikeshare
+Repository for bikeshare project
 
 ### Description
 The script provides statistics and raw data about bike rental service in New York, Chicago and Washington.
