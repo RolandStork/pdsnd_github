@@ -211,9 +211,11 @@ def user_stats(df):
         m_year = df['Birth Year'].mode()[0]
         print('The earliest registered year of birth was {:.0f}. \n'
               'The most recent registered year of birth was {:.0f}. \n'
-              'The most common year of birth was {:.0f}.'.format(min_year, max_year, m_year))
+              'The most common year of birth was {:.0f}.'
+              .format(min_year, max_year, m_year))
     else:
-        print('Birth Year was in this dataset not available.')
+        print('Birth Year was in this dataset not available.\nThis took %s '
+              'seconds.' % (time.time() - start_time))
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
