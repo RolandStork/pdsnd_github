@@ -2,7 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 from datetime import timedelta
-
+#Dictionary pointing to data source
 CITY_DATA = {'chicago': 'data/chicago.csv',
              'new york city': 'data/new_york_city.csv',
              'washington': 'data/washington.csv'}
@@ -36,6 +36,7 @@ def get_filters():
             continue
 
     # get user input for month (all, january, february, ... , june)
+    #abbr. of monthnames used for customer convenience
     months = {'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4, 'may': 5, 'jun': 6}
     while True:
         month = input('Do you want to see the data for a specific month? y/n ')
@@ -52,6 +53,7 @@ def get_filters():
                 break
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
+    #abbr. of daynames used for customer convenience
     days = {'mon': 0, 'tue': 1, 'wed': 2,
             'thu': 3, 'fri': 4, 'sat': 5, 'sun': 6}
     while True:
